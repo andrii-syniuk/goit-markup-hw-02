@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-font: 'Roboto';
+  --accent-color: '#2196f3';
+  --text-style: 'normal';
+}
+body {
+  font-style: var(--text-style);
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+/* cursor: pointer; */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+}
+img {
+  display: block;
+}
+.address {
+  font-style: normal;
+}
+.wrpper {
+  max-width: 1600px;
+  overflow: hidden;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+}
+/* todo =================================== LOGO ====== */
+
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.logo-first {
+  color: #2196f3;
+}
+.logo-footer {
+  color: #fff;
+}
+/* .header-logo {
+  margin-right: 93px;
+} */
+
+/* !=====КНОПКИ НАВИГАЦИИ======= */
+/* .navigation-btn:hover,
+.navigation-btn:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+} */
+
+/* todo ==================================== LOGO END ===== */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation-form {
+  min-width: 620px;
+  margin: 0px 0px 0px 93px;
+}
+.navigation-list {
+  display: flex;
+  justify-content: start;
+}
+
+.navigation-item {
+  margin: 0px 50px 0px 0px;
+}
+.navigation-item:last-child {
+  margin-right: 0px;
+}
+.navigation-link {
+  font-style: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #2196f3;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.kontakt-line {  
+  justify-content: end;  
+}
+.kontakt-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin: 0px 50px 0px 0px;
+
+  color: #757575;
+}
+.kontakt-link:last-child {
+  margin-right: 0px;
+}
+.kontakt-link:hover,
+.kontakt-link:focus {
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  color: #2196f3;  
+}
+
+/* todo ================================= HERO HEDER =======*/
+.hero-container {
+  padding: 200px 250px;
+}
+.font-hero-header {
+  background-color: #2f303a;
+  /* position: absolute; */
+}
+.text-hero-header {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 0px 0px;
+}
+.main-btn {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  outline: 3px solid;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+
+  background: #2196f3;
+  color: #ffffff;
+ 
+  outline-color: rgba(71, 126, 232,0.5);
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+.main-btn:hover,
+.main-btn:focus {
+  border: none;
+  transition: all 500ms ease;
+  color: #2f303a;
+  outline-color: rgba(71, 126, 232, 0);
+  outline-offset: 50px;
+}
+
+/*=====SECOND SRCTION ОСОБЕННОСТИ======*/
+
+.features {
+  padding: 91px 0px;
+}
+.features-list {
+  display: flex;
+  justify-content: center;
+}
+.features-link {
+  margin: 0px 45px 0px 0px;
+}
+.features-link:last-child {
+  margin-right: 0px;
+}
+.features-link-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0px 0px 10px 0px;
+
+  color: #212121;
+}
+.features-link-text {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+/*=====THREE SECTION чем занимаемся ======*/
+.doing {
+  padding: 0px 0px 94px 0px;
+}
+.doing-container {
+  text-align: center;
+}
+.doing-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0px 0px 50px 0px;
+
+  color: #212121;
+}
+.doing-list {
+  display: flex;
+}
+.doing-link {
+  margin: 0px 30px 0px 0px;
+}
+.doing-link:last-child {
+  margin-right: 0px;
+}
+
+/* todo ========= TEAM SECTION */
+.team {
+  background-color: rgba(245, 244, 250, 1);
+}
+.team-container {
+  padding: 94px 0px;
+}
+.container {
+}
+.team-title {
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+
+  margin: 0px 0px 50px 0px;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+.list {
+}
+.team-link {
+  margin: 0px 30px 0px 0px;
+  padding: 0px 0px 30px 0px;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
+  outline-color: none;
+}
+.team-link:last-child {
+  margin-right: 0;
+}
+.team-card-foto {
+  transition: all 1000ms ease;
+}
+.team-card-foto:hover {
+  transform: scale(0.9);
+  transition: all 750ms ease;
+}
+.team-card-name {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19; 
+  letter-spacing: 0.03em;
+  margin: 30px 0px 10px 0px;
+
+  color: #212121;
+}
+.team-card-pro {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+/*todo =========== FOOTER========*/
+
+.footer {
+  background-color: rgba(47, 48, 58, 1);
+
+}
+.footer-container {
+  padding: 60px 0px 60px 0px;
+}
+.footer-contact-body {
+}
+.footer-logo-body {
+  margin: 0px 0px 20px 0px;
+}
+address-list-body {
+}
+.footer-address-list {
+}
+.footer-address-item {
+  margin: 0px 0px 9px 0px;
+}
+.footer-address-item:last-child {
+  margin-bottom: 0;
+}
+.footer-address-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.map-address {
+  color: #FFFFFF;
+}
+/* .basement {
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+  background-color: rgba(47, 48, 58, 1);
+} */
+
+/* ========TEST========= не работает. разобраться*/
+/* .team-link:nth-child(odd) {
+  border: 5px solid black;
+} */
