@@ -4,11 +4,21 @@
 }
 :root {
   --main-font: "Roboto";
-  --accent-color: "#2196f3";
-  --text-style: "normal";
+  --second-font: "Raleway";
+  --font-w: 400;
+  --black-color: #000000;
+  --second-black: #212121;
+  --white-color: #ffffff;
+  --blue-color: #2196f3;
+  --grey-color: rgba(236, 236, 236, 1);
+  --text-style: normal;
 }
 body {
+  font-weight: 700;
+  font-family: var(--main-font);
   font-style: var(--text-style);
+  font-size: 14px;
+  color: var(--black-color);
 }
 .link {
   text-decoration: none;
@@ -49,23 +59,19 @@ img {
 /* todo =================================== LOGO ====== */
 
 .logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  font-family: var(--second-font);
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
 }
 .logo-first {
-  color: #2196f3;
+  color: var(--blue-color);
 }
 .logo-footer {
-  color: #fff;
+  display: block;
+  color: var(--white-color);
+  margin: 0px 0px 20px 0px;
 }
-/* .header-logo {
-  margin-right: 93px;
-} */
 
 /* todo ==================================== LOGO END ===== */
 
@@ -83,7 +89,7 @@ img {
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: rgba(236, 236, 236, 1);
+  background-color: var(--grey-color);
   bottom: 0;
   left: 0;
   z-index: 5;
@@ -108,16 +114,13 @@ img {
   margin-right: 0px;
 }
 .navigation-link {
-  font-style: var(--main-font);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #000000;
 }
 .navigation-link:hover,
 .navigation-link:focus {
-  color: #2196f3;
+  color: var(--blue-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .kontakt-line {
@@ -125,10 +128,9 @@ img {
 }
 .kontakt-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin: 0px 50px 0px 0px;
+  margin: 0px 40px 0px 0px;
 
   color: #757575;
 }
@@ -138,7 +140,7 @@ img {
 .kontakt-link:hover,
 .kontakt-link:focus {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-  color: #2196f3;
+  color: var(--blue-color);
 }
 
 /* todo ================================= HERO HEDER =======*/
@@ -150,13 +152,12 @@ img {
   /* position: absolute; */
 }
 .text-hero-header {
-  font-family: "Roboto";
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-color);
   text-transform: uppercase;
 }
 .hero-btn {
@@ -171,14 +172,13 @@ img {
   outline: 3px solid;
   border: none;
   border-radius: 4px;
-  font-family: "Roboto";
-  font-weight: 700;
+  font-family: var(--second-font);
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
 
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--blue-color);
+  color: var(--white-color);
 
   outline-color: rgba(71, 126, 232, 0.5);
   transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
@@ -192,7 +192,7 @@ img {
   outline-offset: 50px;
 }
 
-/*=====SECOND SRCTION ОСОБЕННОСТИ======*/
+/*todo ===== FEATURES SECTION======*/
 
 .features {
   padding: 91px 0px;
@@ -208,27 +208,22 @@ img {
   margin-right: 0px;
 }
 .features-link-title {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin: 0px 0px 10px 0px;
 
-  color: #212121;
+  color: var(--second-black);
 }
 .features-link-text {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: var(--font-w);
   line-height: 1.7;
   letter-spacing: 0.03em;
 
   color: #757575;
 }
 
-/*=====THREE SECTION чем занимаемся ======*/
+/*todo=====DOING SECTION======*/
 .doing {
   padding: 0px 0px 94px 0px;
 }
@@ -236,15 +231,13 @@ img {
   text-align: center;
 }
 .doing-title {
-  font-family: "Roboto";
-  font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0px 0px 50px 0px;
 
-  color: #212121;
+  color: var(--second-black);
 }
 .doing-list {
   display: flex;
@@ -258,22 +251,18 @@ img {
 
 /* todo ========= TEAM SECTION */
 .team {
-  background-color: rgba(245, 244, 250, 1);
+  background-color: var(--grey-color);
 }
 .team-container {
   padding: 94px 0px;
 }
-.container {
-}
 .team-title {
   text-align: center;
-  font-family: "Roboto";
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--second-black);
 
   margin: 0px 0px 50px 0px;
 }
@@ -289,7 +278,7 @@ img {
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: #fff;
+  background-color: var(--white-color);
   outline-color: none;
 }
 .team-link:last-child {
@@ -303,18 +292,16 @@ img {
   transition: all 750ms ease;
 }
 .team-card-name {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin: 30px 0px 10px 0px;
 
-  color: #212121;
+  color: var(--second-black);
 }
 .team-card-pro {
-  font-family: "Roboto";
-  font-weight: 400;
+  font-weight: var(--font-w);
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -346,16 +333,14 @@ address-list-body {
   margin-bottom: 0;
 }
 .footer-address-link {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: var(--font-w);
+  font-style: var(--text-style);
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--white-color);
 }
 .map-address {
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 /* ! ============================= PORTFOLIO PAGE ============================================== */
@@ -384,20 +369,19 @@ address-list-body {
   border-radius: 4px;
   padding: 6px 0px 6px 0px;
   text-align: center;
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
-  background-color: rgba(245, 244, 250, 1);
+  color: var(--second-black);
+  background-color: var(--grey-color);
 }
 .portfolio-btn-link:hover,
 .portfolio-btn-link:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: #fff;
-  background: #2196f3;
+  color: var(--white-color);
+  background: var(--blue-color);
 }
 
 .portfolio-cards-body {
@@ -426,21 +410,17 @@ address-list-body {
 }
 .body-card-text-box {
   padding: 20px 20px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
   line-height: 2;
   border: 0px solid rgba(238, 238, 238, 1);
   // letter-spacing: 0.06em;
 
-  color: #212121;
+  color: var(--second-black);
 }
 .card-title {
-  margin: 0px 0px 6px 0px;
 }
 .card-subtitle {
-  font-weight: 400;
+  font-weight: var(--font-w);
+  margin: 6px 0px 0px 0px;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
