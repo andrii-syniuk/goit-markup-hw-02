@@ -142,6 +142,10 @@ img {
 .navigation-link.current::after {
   opacity: 1;
 }
+.active {
+  color: var(--blue-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .kontakt-line {
   justify-content: end;
 }
@@ -232,7 +236,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin: 0px 0px 10px 0px;
-
+  font-size: var(--font-w);
   color: var(--second-black);
 }
 .features-link-text {
@@ -346,11 +350,11 @@ address-list-body {
 }
 .footer-address-list {
 }
-.footer-address-list a:hover,
-.footer-address-list a:focus {
-  color: var(--blue-color);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+// .footer-address-list a:hover,
+// .footer-address-list a:focus {
+//   color: var(--blue-color);
+//   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+// }
 .footer-address-item {
   margin: 0px 0px 9px 0px;
 }
@@ -446,7 +450,7 @@ address-list-body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
 
   color: #212121;
 }
