@@ -16,9 +16,9 @@
 body {
   font-weight: 700;
   font-family: var(--main-font);
-  font-style: var(--text-style);
   font-size: 14px;
   color: var(--black-color);
+  background-color: var(--white-color);
 }
 .link {
   text-decoration: none;
@@ -115,6 +115,7 @@ img {
   margin-right: 0px;
 }
 .navigation-link {
+  position: relative;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -125,6 +126,21 @@ img {
 .navigation-link:focus {
   color: var(--blue-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navigation-link::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 245%;
+  opacity: 0;
+  height: 4px;
+  width: 100%;
+  background: var(--blue-color);
+  border-radius: 2px;
+}
+.navigation-link.current::after {
+  opacity: 1;
 }
 .kontakt-line {
   justify-content: end;
@@ -211,6 +227,7 @@ img {
   margin-right: 0px;
 }
 .features-link-title {
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -329,6 +346,11 @@ address-list-body {
 }
 .footer-address-list {
 }
+.footer-address-list a:hover,
+.footer-address-list a:focus {
+  color: var(--blue-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .footer-address-item {
   margin: 0px 0px 9px 0px;
 }
@@ -340,12 +362,11 @@ address-list-body {
   font-style: var(--text-style);
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--white-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 .map-address {
   color: var(--white-color);
 }
-
 /* ! ============================= PORTFOLIO PAGE ============================================== */
 
 .portfolio-work-gallary {
@@ -368,9 +389,9 @@ address-list-body {
 }
 .portfolio-btn-link {
   display: block;
-  width: 145px;
+  // width: 145px;
   border-radius: 4px;
-  padding: 6px 0px 6px 0px;
+  padding: 6px 22px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -409,6 +430,7 @@ address-list-body {
 .card-link {
 }
 .card-img {
+  width: 370px;
   // border: 1px solid rgba(238, 238, 238, 1);
 }
 .body-card-text-box {
