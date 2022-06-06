@@ -430,7 +430,7 @@ address-list-body {
 .card-link {
 }
 .card-img {
-  width: 370px;
+  max-width: 370px;
   // border: 1px solid rgba(238, 238, 238, 1);
 }
 .body-card-text-box {
@@ -442,6 +442,13 @@ address-list-body {
   color: var(--second-black);
 }
 .card-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+
+  color: #212121;
 }
 .card-subtitle {
   font-weight: var(--font-w);
